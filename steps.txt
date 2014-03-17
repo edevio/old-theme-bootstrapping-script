@@ -1,0 +1,42 @@
+rename admin account
+
+WP-CONFIG
+
+Generate salt for wp-config
+https://api.wordpress.org/secret-key/1.1/salt/ 
+
+change table prefix in wp-config
+e.g. wp_EXAMPLE_
+
+create separate upload folder in wp-config
+/** Custom folder location for image uploads. */
+define( 'UPLOADS', ''.'../uploads' );
+
+mkdir uploads && echo '*' > uploads/.gitignore && git add -f uploads/.gitignore
+
+
+HTACCESS
+
+Options -Indexes
+
+
+# SECURE WP-ADMIN For Site of Known IPs<FilesMatch ".*"> Order Deny,Allow Deny from all Allow from 123.456.789</FilesMatch>
+
+
+chmod 755 Directories
+chmod 644 Files
+
+
+PLUGINS
+
+clone bitbucket
+
+wp - security scan
+wordpress firewall 2 - old but ok
+better wp security - blocks login attempts
+wp ban
+wp exploit scanner
+w3 total cache
+yoast seo 
+
+yo wordpress:plugins wordpress-firewall-2, better-wp-security, exploit-scanner, w3-total-cache, wordpress-seo, wordpress-backup-to-dropbox, google-analytics-for-wordpress advanced-custom-fields uk-cookie-consent

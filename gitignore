@@ -1,0 +1,14 @@
+.DS_Store
+.svn
+.cvs
+*.bak
+*.swp
+*.log
+*.md
+Thumbs.db
+node_modules
+npm-debug
+Capfile
+Gemfile
+Gemfile.lock
+package.json

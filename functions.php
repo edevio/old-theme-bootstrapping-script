@@ -1,0 +1,1 @@
+require_once locate_template('/lib/remove-menu-items.php'); // Removes selected menu items from WP-Admin
